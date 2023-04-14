@@ -7,7 +7,7 @@ const getVisitorCount = () => {
     }).then (response =>{
         console.log("Website called function API.");
         count = response.count;
-        document.getElementByID("counter).innerText = count;
+        document.getElementByID("visits").innerText = count;
                                 }).catch(function(error){
             console.log(error);
         }
