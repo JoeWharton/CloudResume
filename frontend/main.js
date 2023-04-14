@@ -10,5 +10,5 @@ const getVisitorCount = () => {
         document.getElementByID("visits").innerText = count;
                                 }).catch(function(error){
             console.log("error");
-        }
-                                         }
+        });
+    return count;
