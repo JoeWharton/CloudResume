@@ -1,3 +1,6 @@
+window.addEventListener('DOMContentLoaded', (event) =>{getVisitCount();
+                                                      })
+
 const functionApi = ''; //insert API url 
 
 const getVisitorCount = () => {
@@ -9,6 +12,6 @@ const getVisitorCount = () => {
         count = response.count;
         document.getElementByID("visits").innerText = count;
                                 }).catch(function(error){
-            console.log("error");
+            console.log(error);
         });
     return count;
